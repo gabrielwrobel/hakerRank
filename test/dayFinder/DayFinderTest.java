@@ -1,3 +1,4 @@
+import dayFinder.DayFinder;
 import org.junit.jupiter.api.Test;
 
 import java.time.DateTimeException;
@@ -9,14 +10,14 @@ class DayFinderTest {
     @Test
     void shouldGiveValidAnswer() {
         //given
-            int day = 21;
-            int month = 3;
-            int year = 2023;
-            String expectedValue = "TUESDAY";
+        int day = 21;
+        int month = 3;
+        int year = 2023;
+        String expectedValue = "TUESDAY";
         //when
-            String actualValue = DayFinder.findDay(month,day,year);
+        String actualValue = DayFinder.findDay(month,day,year);
         //then
-            assertEquals(expectedValue,actualValue);
+        assertEquals(expectedValue,actualValue);
     }
     @Test
     void shouldGiveZeroAnswer() {
